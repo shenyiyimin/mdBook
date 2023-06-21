@@ -1,0 +1,10 @@
+[lib]
+name = "mdbook"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+mdbook = "*"
+mdbook-toc = "*"
+mdbook-mermaid = "*"
+mdbook-math = "*"
