@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "mdbook",
+  "builds": [
+    {
+      "src": "mdbook/Cargo.toml",
+      "use": "@vercel/rust"
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/book/(.*)",
+      "dest": "/mdbook/html/$1/index.html"
+    }
+  ]
+}
